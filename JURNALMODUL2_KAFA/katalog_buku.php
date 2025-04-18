@@ -7,7 +7,7 @@ include 'connect.php';
     // Hint : Gunakan strlen()
     if ($search) {
         if (strlen($search) < 3) {
-
+            print("<script>alert('Kurang dari 3');</script>");
         } elseif (!preg_match('/^([a-zA-Z0-9]\s)+$/', $search)) {
 
         }
